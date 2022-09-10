@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h3>Please fill up the below form</h3>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div><input type="text" name="myName" id="name"></div>
+        <br>
+        <label for="number">Contact No.</label>
+        <div><input type="number" name="myPhone" id="number"></div>
+        <br>
+        <label for="email">Email ID</label>
+        <div><input type="email" name="myemail" id="email"></div>
+        <br>
+        <label for="date">DOB</label>
+        <div><input type="date" name="myDOB" id="date"></div>
+        <br>
+        <label for="text">Address</label>
+        <div><input type="text" name="myAddress" id="text"></div>
+        <br>
+        <!-- radio button -->
+        <label for="radio">Gender</label>
+        <div> male <input type="radio" name="myGender"> female <input type="radio" name="myGender"> other <input
+                type="radio" name="myGender"></div>
+        <br>
+        <!-- checkbox -->
+        <label for="checkbox">Are you a Robot?</label>
+        <div><input type="checkbox" name="robo" checked></div>
+        <br>
+        <!-- textarea -->
+        <label for="textarea">Additional Information</label>
+        <div><input type="textarea" name="addinfo" rows="40" cols="20"> </div>
+        <br> 
+        <!-- options -->
+        <div><label for="server">Server</label>
+            <select name="server" id="myserver">
+                <option value="asia">Asia</option>
+                <option value="middleeast">Middle East</option>
+                <option value="europe">Europe</option>
+                <option value="na">North America</option>
+        </div>
+        <br>
+        <br>
+<br>
+       <div><input type="submit">Submit</div>
+       <div><input type="reset">Reset</div>
+    </form>
+</body>
+
+</html>
+<!-- add info rows column 
+submit ..two errors -->
+
+
