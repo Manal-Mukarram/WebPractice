@@ -1,3 +1,12 @@
+/* MUST ADD THESE ON TOP OF EVERY CSS */
+/*from here*/
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* to here */
+
 p{
     background-color: blue; color: darkblue;
 }
