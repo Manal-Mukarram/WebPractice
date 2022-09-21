@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- <script>alert("this page asks you to fill up the application"</script> -->
+    <style>
+body{
+    background-color: rgb(167, 167, 167);
+}
+/* body{
+    // background-image: url(https://c.tenor.com/r2NutC5DjRkAAAAM/cute-in-love.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+} */
+form{
+    border: 2px solid blue;
+    border-radius: 20px;
+    /* margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 100px;
+    padding-bottom: 10px;
+    padding-right: 5%;
+    padding-left: 10px; */
+    margin: 10px;
+    padding: 5px;
+  
+}
+    </style>
+</head>
+<body>
+    <script>alert("This page asks you to fill up the form")</script>
+    <form action="backend.php">
+    <h3>APPLICATION</h3>
+    <div><label for="myname">Name:&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;</label>
+    <input type="name" id="myname" placeholder="Enter Your Name"></div>
+<br>
+    <div><label for="myaddress">Address: &nbsp;&nbsp;&nbsp;&nbsp;<textarea id="my address" rows="4" placeholder="Enter Address"></textarea></label>
+    </div>
+<br>
+    <div><label for="mycontact">Phone no. :</label>
+    <input type="tel" id="mycontact" placeholder="Enter Contact Number"></div>
+<br>
+    <div><label for="emailid">Email Id:&nbsp;&nbsp;&nbsp;</label>
+    <input type="email" id="emailid" placeholder="abc123@example.com"></div>
+<br>
+    <div><label for="password">Password:&nbsp;</label>
+    <input type="password" id="password" placeholder="Create a strong password"></div>
+<br>
+    <div><label for="dob">Date of Birth:</label>
+    <input type="date" id="dob"></div>
+<br>
+    <div><label for="field">Field:</label>
+        <br>
+    Science<input type="radio" id="field">
+    Commerce<input type="radio" id="field">
+    Arts<input type="radio" id="field"></div>
+<br>
+    <div><label for="eligibility">Accept terms and conditions</label>
+    <input type="checkbox" id="emailid"></div>
+<br>
+<div><input type="submit">
+<input type="reset" name="submit" id="reset"></div>
+    </form>
+
+
+</body>
+</html>
