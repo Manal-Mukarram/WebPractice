@@ -1,39 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>media queries</title>
     <style>
-.container{
-    background-color: wheat;
-    display: grid;
-grid-gap: 2rem;
-}
-.items{
-    border: 2px solid rgb(128, 50, 50);
-}
+        body {
+            background-color: rgb(91, 11, 11);
+        }
+
+        .container {
+            background-color: rgb(246, 222, 222);
+            padding: 10px;
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer ';
+        }
+
+        .items {
+            border: 4px solid rgb(128, 50, 50);
+            background-color: wheat;
+        }
+
+        #navbar {
+            grid-area: navbar;
+            display: block;
+            text-align: center;
+            padding: 20px;
+        }
+
+        span {
+            padding: 20px;
+        }
+
+        span:hover {
+            cursor: pointer;
+            color: white;
+            background-color: maroon;
+        }
+
+        #section {
+            grid-area: section;
+            padding: 20px;
+        }
+
+        #aside {
+            grid-area: aside;
+            padding: 20px;
+        }
+
+        #footer {
+            display: block;
+            text-align: center;
+            grid-area: footer;
+        }
+
+        @media only screen and (max-width: 496px) {
+            #navbar {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        @media only screen and (max-width: 496px) {
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <nav class="items">
+        <nav id="navbar" class="items">
             <span>Home</span>
             <span>About Us</span>
             <span>Services</span>
             <span>Contact Us</span>
         </nav>
-        <section class="items">
+        <section id="section" class="items">
             <h3>Welcome</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quas qui earum a eaque, officia quibusdam non nesciunt! Eligendi quos eveniet molestiae ad mollitia eos, quam voluptas non illo ratione, consequuntur et adipisci dolorem cupiditate praesentium ullam ab iusto vero?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quas qui earum a eaque, officia
+                quibusdam non nesciunt! Eligendi quos eveniet molestiae ad mollitia eos, quam voluptas non illo ratione,
+                consequuntur et adipisci dolorem cupiditate praesentium ullam ab iusto vero?</p>
         </section>
-        <aside class="items">
+        <aside id="aside" class="items">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, aliquid.</p>
         </aside>
-        <footer class="items">
+        <footer id="footer" class="items">
             <h4>asdfjkl; Copyright</h4>
         </footer>
     </div>
 </body>
+
 </html>
