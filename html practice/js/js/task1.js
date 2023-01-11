@@ -20,36 +20,35 @@ Example:
     the student entered roll no: 115
     the output will be: 
         "You are in Section C"
-
 */
-
-
-
+let atom = function (roll_no) {
+  if (roll_no <= 43) {
+    return;
+    console.log("You are in Section A");
+  } else if (roll_no <= 86 && roll_no >= 44) {
+    return;
+    console.log("You are in Section B");
+  } else if (roll_no <= 121 && roll_no >= 86) {
+    return;
+    console.log("You are in Section C");
+  } else if (roll_no <= 256 && roll_no >= 121) {
+    return;
+    console.log("You are in Section D");
+  } else if (roll_no <= 298 && roll_no >= 256) {
+    return;
+    console.log("You are in Section E");
+  } else if (roll_no <= 343 && roll_no >= 298) {
+    return;
+    console.log("You are in Section F");
+  } else if (roll_no <= 401 && roll_no >= 343) {
+    return;
+    console.log("You are in Section G");
+  } else {
+    return;
+    console.log("There is no such roll number..");
+  }
+};
 let roll_no = prompt("enter roll number");
-roll_no = Number.parseInt(roll_no)
-if (roll_no <= 43){ 
-console.log("You are in Section A");
-}
-else if (roll_no <= 86 && roll_no >= 44){ 
-console.log("You are in Section B");
-}
-else if (roll_no <= 121 && roll_no >= 86){ 
-console.log("You are in Section C");
-}
-else if (roll_no <= 256 && roll_no >= 121){ 
-console.log("You are in Section D");
-}
-else if (roll_no <= 298 && roll_no >= 256){ 
-console.log("You are in Section E");
-}
-else if (roll_no <= 343 && roll_no >= 298){ 
-console.log("You are in Section F");
-}
-else if (roll_no <= 401 && roll_no >= 343){ 
-console.log("You are in Section G");
-}
-else {
-    console.log("There is no such roll number..")
-}
-// console.log(typeof roll_no)
-
+roll_no = Number.parseInt(roll_no);
+let result = atom(roll_no);
+console.log("Your section is " + result);
