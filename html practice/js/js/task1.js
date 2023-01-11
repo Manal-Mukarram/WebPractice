@@ -21,34 +21,26 @@ Example:
     the output will be: 
         "You are in Section C"
 */
-let atom = function (roll_no) {
+const getRollNo = (roll_no) => {
   if (roll_no <= 43) {
-    return;
-    console.log("You are in Section A");
+    return "A";
   } else if (roll_no <= 86 && roll_no >= 44) {
-    return;
-    console.log("You are in Section B");
+    return "B";
   } else if (roll_no <= 121 && roll_no >= 86) {
-    return;
-    console.log("You are in Section C");
+    return "C";
   } else if (roll_no <= 256 && roll_no >= 121) {
-    return;
-    console.log("You are in Section D");
+    return "D";
   } else if (roll_no <= 298 && roll_no >= 256) {
-    return;
-    console.log("You are in Section E");
+    return "E";
   } else if (roll_no <= 343 && roll_no >= 298) {
-    return;
-    console.log("You are in Section F");
+    return "F";
   } else if (roll_no <= 401 && roll_no >= 343) {
-    return;
-    console.log("You are in Section G");
+    return "G";
   } else {
-    return;
-    console.log("There is no such roll number..");
+    return "NONE";
   }
 };
 let roll_no = prompt("enter roll number");
 roll_no = Number.parseInt(roll_no);
-let result = atom(roll_no);
-console.log("Your section is " + result);
+let result = getRollNo(roll_no);
+alert(`You are in Section ${result}`);
